@@ -379,23 +379,6 @@ SWIFT_CLASS("_TtC8AdBrixRM8AdBrixRM")
 /// \param secretKey input your secret key served from console site.
 ///
 - (void)initAdBrixWithAppKey:(NSString * _Nonnull)appKey secretKey:(NSString * _Nonnull)secretKey SWIFT_METHOD_FAMILY(none);
-/// 앱 실행시 <em>AppDelegate</em>에서 최초 <em>앱키</em>, <em>시크릿키</em>, <em>디바이스</em> 등의 정보를 입력한다
-/// <h1>Example Swift</h1>
-/// \code
-/// adBrix.initAdBrix(appKey: "02M110kRQ0K7UAg123dmYg", secretKey:"BraTLszIZUfsmSb2ToNaXg", deviceId:"testDevice1")
-///
-/// \endcode<h1>Example ObjC</h1>
-/// \code
-/// AdBrixRM *adBrix = [AdBrixRM sharedInstance];
-/// [adBrix initAdBrixWithAppKey:@"02M110kRQ0K7UAg123dmYg" secretKey:@"BraTLszIZUfsmSb2ToNaXg" deviceId:@"testDevice1"];
-///
-/// \endcode\param appKey input your app key served from console site.
-///
-/// \param secretKey input your secret key served from console site.
-///
-/// \param deviceId device id (never use random string like uuid, guid etc).
-///
-- (void)initAdBrixWithAppKey:(NSString * _Nonnull)appKey secretKey:(NSString * _Nonnull)secretKey deviceId:(NSString * _Nonnull)deviceId SWIFT_METHOD_FAMILY(none);
 - (void)initAdBrixPush SWIFT_METHOD_FAMILY(none) SWIFT_AVAILABILITY(ios,introduced=10.0);
 /// 노출 <em>로그 레벨</em>을 설정한다
 /// <h1>Example Swift</h1>
@@ -411,6 +394,20 @@ SWIFT_CLASS("_TtC8AdBrixRM8AdBrixRM")
 /// \endcode\param logLevel AdBrixLogLevel - NONE, TRACE, DEBUG, INFO, WARNING, ERROR.
 ///
 - (void)setLogLevel:(enum AdBrixLogLevel)logLevel;
+/// <em>디바이스 ID</em> 설정
+/// <h1>Example Swift</h1>
+/// \code
+/// let adBrix = AdBrixRM.getInstance
+/// adBrix.setDeviceId("test_id_01")
+///
+/// \endcode<h1>Example ObjC</h1>
+/// \code
+/// AdBrixRM *adBrix = [AdBrixRM sharedInstance];
+/// [adBrix setDeviceId:@"test_id_01"];
+///
+/// \endcode\param logLevel AdBrixLogLevel - NONE, TRACE, DEBUG, INFO, WARNING, ERROR.
+///
+- (void)setDeviceId:(NSString * _Nonnull)device_id;
 /// 이벤트 <em>전송 시간 주기</em>를 설정한다
 /// <h1>Example Swift</h1>
 /// \code
