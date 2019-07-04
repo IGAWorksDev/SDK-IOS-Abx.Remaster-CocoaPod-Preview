@@ -224,6 +224,12 @@ SWIFT_CLASS("_TtC8AdBrixRM12AdBrixConfig")
 @end
 
 
+SWIFT_CLASS("_TtC8AdBrixRM14AdBrixConstant")
+@interface AdBrixConstant : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC8AdBrixRM13AdBrixPrivate")
 @interface AdBrixPrivate : NSObject
 /// @discussion Objective-C 기반 프로젝트에서 본 함수를 호툴하여 싱글톤 인스턴스 객체를 획득한다
