@@ -2226,6 +2226,7 @@ SWIFT_CLASS("_TtC8AdBrixRM8AdBrixRM")
 ///
 - (void)commonPurchaseWithOrderId:(NSString * _Nonnull)orderId productInfo:(NSArray<AdBrixRmCommerceProductModel *> * _Nonnull)productInfo discount:(double)discount deliveryCharge:(double)deliveryCharge paymentMethod:(enum AdbrixRmPaymentMethod)paymentMethod;
 - (void)commonPurchaseWithOrderId:(NSString * _Nonnull)orderId productInfo:(NSArray<AdBrixRmCommerceProductModel *> * _Nonnull)productInfo discount:(double)discount deliveryCharge:(double)deliveryCharge paymentMethod:(enum AdbrixRmPaymentMethod)paymentMethod orderAttr:(NSDictionary<NSString *, NSString *> * _Nullable)orderAttr;
+- (void)commonPurchaseWithOrderId:(NSString * _Nonnull)orderId productInfo:(NSArray<AdBrixRmCommerceProductModel *> * _Nonnull)productInfo discount:(double)discount deliveryCharge:(double)deliveryCharge paymentMethod:(enum AdbrixRmPaymentMethod)paymentMethod extraAttr:(NSDictionary<NSString *, id> * _Nullable)extraAttr;
 /// **삼품 결제 **
 /// <h1>Example Swift</h1>
 /// \code

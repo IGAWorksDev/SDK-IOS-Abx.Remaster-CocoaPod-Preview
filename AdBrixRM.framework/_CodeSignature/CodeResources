@@ -42,7 +42,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		q/uknI8g48Et7EijWA91iF3FkS0=
+		36rkth5iVgKxzgqXup3pZtSkQk8=
 		</data>
 		<key>Headers/AdBrixPushServiceObjC.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/AdBrixRM-Swift.h</key>
 		<data>
-		rp9/R+uJOnw+A4GVOeKd6Ye0fJE=
+		x+MQynKz0pX9jFG75DaRvLmWTWg=
 		</data>
 		<key>Headers/AdBrixRM.h</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Modules/AdBrixRM.swiftmodule/arm.swiftmodule</key>
 		<data>
-		dLPnEm+HDO42v7BdaqfGRYwd4A4=
+		ZgoN8EJPBV/XzHSRAPmvqqrcjOA=
 		</data>
 		<key>Modules/AdBrixRM.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Modules/AdBrixRM.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		PQKxhkfkMMR2Qh6UBsonm3hYIFc=
+		5EvaeJ5Fb/B4xD/k6z5qi52/W/Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -194,11 +194,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			q/uknI8g48Et7EijWA91iF3FkS0=
+			36rkth5iVgKxzgqXup3pZtSkQk8=
 			</data>
 			<key>hash2</key>
 			<data>
-			gp5yPGmaasZpzagCYRLCDSRTndyeu4kkxtFW14Wc9bU=
+			11unQQFQfdysmUzIG3o9lQEu6hjfY5XyC3cSr5YwBuA=
 			</data>
 		</dict>
 		<key>Headers/AdBrixPushServiceObjC.h</key>
@@ -216,11 +216,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rp9/R+uJOnw+A4GVOeKd6Ye0fJE=
+			x+MQynKz0pX9jFG75DaRvLmWTWg=
 			</data>
 			<key>hash2</key>
 			<data>
-			+InyEx0Jx9SghDE8YUOsr48IKUjCW3NP1+iSnQ7yWXQ=
+			FAdznFmShsW6p4UzMdGSz2abbkLQmr13jTzf7weok48=
 			</data>
 		</dict>
 		<key>Headers/AdBrixRM.h</key>
@@ -271,11 +271,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dLPnEm+HDO42v7BdaqfGRYwd4A4=
+			ZgoN8EJPBV/XzHSRAPmvqqrcjOA=
 			</data>
 			<key>hash2</key>
 			<data>
-			TVuFUcMNhr/JgapsGKnyN915PlqnLYMlkRfPHVx9UVY=
+			N+K5wIijk1v/pQmbQgvEXKteV8WlbpIRxilZahxO6ak=
 			</data>
 		</dict>
 		<key>Modules/AdBrixRM.swiftmodule/arm64.swiftdoc</key>
@@ -293,11 +293,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PQKxhkfkMMR2Qh6UBsonm3hYIFc=
+			5EvaeJ5Fb/B4xD/k6z5qi52/W/Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			481vMzB4pxJY/DeqbSEzo43vWaTiYf1RDt7tA0STUeY=
+			ur6Zt90jmTBbYnsKKg65ErbD1FUX26LwzGpCcdreCe8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
