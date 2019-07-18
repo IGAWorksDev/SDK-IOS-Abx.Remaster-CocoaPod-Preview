@@ -344,7 +344,7 @@ SWIFT_CLASS("_TtC8AdBrixRM8AdBrixRM")
 - (void)gdprForgetMe;
 /// Get the <em>GDPR</em> status
 - (BOOL)isGdprForgetMe SWIFT_WARN_UNUSED_RESULT;
-- (void)setDeeplinkDelegateWithDelegate:(id <AdBrixRMDeeplinkDelegate> _Nonnull)delegate SWIFT_DEPRECATED_MSG("will changed method name to setDeferredDeeplinkDelegate, so use setDeferredDeeplinkDelegate(delegate :AdBrixRMDeferredDeeplinkDelegate)");
+- (void)setDeeplinkDelegateWithDelegate:(id <AdBrixRMDeeplinkDelegate> _Nonnull)delegate;
 - (void)setDeferredDeeplinkDelegateWithDelegate:(id <AdBrixRMDeferredDeeplinkDelegate> _Nonnull)delegate;
 - (void)setInitializeDoneDelegateWithDelegate:(id <AdBrixRMSDKInitializDoneDelegate> _Nonnull)delegate;
 - (void)setAdBrixRmPushLocalDelegateWithDelegate:(id <AdBrixRmPushLocalDelegate> _Nonnull)delegate SWIFT_AVAILABILITY(ios,introduced=10.0);
@@ -3158,7 +3158,7 @@ typedef SWIFT_ENUM(NSInteger, AdbrixRmPaymentMethod, closed) {
 };
 
 
-SWIFT_PROTOCOL("_TtP8AdBrixRM24AdBrixRMDeeplinkDelegate_") SWIFT_DEPRECATED_MSG("will changed method name to AdBrixRMDeferredDeeplinkDelegate, so use AdBrixRMDeferredDeeplinkDelegate")
+SWIFT_PROTOCOL("_TtP8AdBrixRM24AdBrixRMDeeplinkDelegate_")
 @protocol AdBrixRMDeeplinkDelegate
 - (void)didReceiveDeeplinkWithDeeplink:(NSString * _Nonnull)deeplink;
 @end
