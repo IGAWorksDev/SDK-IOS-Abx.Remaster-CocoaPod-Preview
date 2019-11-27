@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AdBrixRemasteredPreview'
-  s.version          = '1.6.2001'
+  s.version          = '1.6.3001'
   s.summary          = 'The preview version of AdBrixRemastered'
   s.homepage         = 'https://github.com/IGAWorksDev/SDK-IOS-Abx.Remaster-CocoaPod-Preview'
 
@@ -10,7 +10,7 @@ You can test it before AdBrixRemasteredSDK is released
                        DESC
 
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'David.park' => 'david.park@igaworks.com' }
+  s.author           = { 'mike-igawk' => 'mike@igaworks.com' }
   s.source           = { :git => 'https://github.com/IGAWorksDev/SDK-IOS-Abx.Remaster-CocoaPod-Preview.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
