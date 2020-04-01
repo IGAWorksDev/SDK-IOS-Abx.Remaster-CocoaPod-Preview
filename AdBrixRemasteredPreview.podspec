@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AdBrixRemasteredPreview'
-  s.version          = '1.6.5000'
+  s.version          = '1.6.5100'
   s.summary          = 'The preview version of AdBrixRemastered'
   s.homepage         = 'https://github.com/IGAWorksDev/SDK-IOS-Abx.Remaster-CocoaPod-Preview'
 
