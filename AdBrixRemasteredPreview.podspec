@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AdBrixRemasteredPreview'
-  s.version          = '1.6.5210'
+  s.version          = '1.6.5111'
   s.summary          = 'The preview version of AdBrixRemastered'
   s.homepage         = 'https://github.com/IGAWorksDev/SDK-IOS-Abx.Remaster-CocoaPod-Preview'
 
@@ -16,6 +16,12 @@ You can test it before AdBrixRemasteredSDK is released
 
   s.platform = :ios, '9.0'
   s.ios.vendored_frameworks = 'AdBrixRM.framework'
+
+  s.pod_target_xcconfig = {
+     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+
   
   # s.resource_bundles = {
   #   'AdBrixRemasteredPreview' => ['AdBrixRemasteredPreview/Assets/*.png']
