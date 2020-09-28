@@ -1,10 +1,11 @@
 Pod::Spec.new do |s|
   s.name             = 'AdBrixRemasteredPreview'
-  s.version          = '1.6.5211'
+  s.version          = '1.6.5212'
   s.summary          = 'The preview version of AdBrixRemastered'
   s.homepage         = 'https://github.com/IGAWorksDev/SDK-IOS-Abx.Remaster-CocoaPod-Preview'
 
   s.description      = <<-DESC
+This Framework for Naver AudioClip
 The preview version of AdBrixRemastered
 You can test it before AdBrixRemasteredSDK is released
                        DESC
@@ -14,7 +15,7 @@ You can test it before AdBrixRemasteredSDK is released
   s.source           = { :git => 'https://github.com/IGAWorksDev/SDK-IOS-Abx.Remaster-CocoaPod-Preview.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform = :ios, '9.0'
+  s.platform = :ios, '8.0'
   s.ios.vendored_frameworks = 'AdBrixRM.framework'
 
   s.pod_target_xcconfig = {
