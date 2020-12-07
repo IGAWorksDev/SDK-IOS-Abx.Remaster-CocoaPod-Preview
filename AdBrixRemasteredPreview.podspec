@@ -1,11 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'AdBrixRemasteredPreview'
-  s.version          = '1.6.5302'
+  s.version          = '1.6.5310'
   s.summary          = 'The preview version of AdBrixRemastered'
   s.homepage         = 'https://github.com/IGAWorksDev/SDK-IOS-Abx.Remaster-CocoaPod-Preview'
 
   s.description      = <<-DESC
-This Framework for Naver AudioClip
 The preview version of AdBrixRemastered
 You can test it before AdBrixRemasteredSDK is released
                        DESC

@@ -360,7 +360,8 @@ SWIFT_CLASS("_TtC8AdBrixRM8AdBrixRM")
 /// Skip getting IDFA by Developer
 /// <h1>Be Careful</h1>
 /// This function can make turn off for getting IDFA.
-- (void)stopGettingIDFAWithIsStopGettingIDFA:(BOOL)isStopGettingIDFA;
+- (void)stopGettingIDFA;
+- (void)startGettingIDFA;
 /// Set the <em>GDPR</em> status
 /// <h1>Be careful</h1>
 /// If this function called, all data <em>processing stopped</em>. And it cannot rollback until Application <em>reinstalled</em>.
@@ -3829,7 +3830,8 @@ SWIFT_CLASS("_TtC8AdBrixRM8AdBrixRM")
 /// Skip getting IDFA by Developer
 /// <h1>Be Careful</h1>
 /// This function can make turn off for getting IDFA.
-- (void)stopGettingIDFAWithIsStopGettingIDFA:(BOOL)isStopGettingIDFA;
+- (void)stopGettingIDFA;
+- (void)startGettingIDFA;
 /// Set the <em>GDPR</em> status
 /// <h1>Be careful</h1>
 /// If this function called, all data <em>processing stopped</em>. And it cannot rollback until Application <em>reinstalled</em>.
