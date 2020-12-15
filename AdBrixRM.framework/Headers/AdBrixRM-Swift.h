@@ -484,7 +484,7 @@ SWIFT_CLASS("_TtC8AdBrixRM8AdBrixRM")
 ///
 /// \endcode\param appleAdvertisingIdentifier 광고 Identifier
 ///
-- (void)setAppleAdvertisingIdentifier:(NSString * _Nonnull)appleAdvertisingIdentifier;
+- (void)setAppleAdvertisingIdentifier:(NSString * _Nonnull)appleAdvertisingIdentifier SWIFT_DEPRECATED_MSG("AdBrixRm sdk can get IDFA/IDFV without this api, please don't use this.");
 /// <em>로그인</em> - 본 함수로 <em>라이브옵스 push</em>, <em>커머스</em> 공동 사용가능
 /// <h1>Example Swift</h1>
 /// \code
@@ -3954,7 +3954,7 @@ SWIFT_CLASS("_TtC8AdBrixRM8AdBrixRM")
 ///
 /// \endcode\param appleAdvertisingIdentifier 광고 Identifier
 ///
-- (void)setAppleAdvertisingIdentifier:(NSString * _Nonnull)appleAdvertisingIdentifier;
+- (void)setAppleAdvertisingIdentifier:(NSString * _Nonnull)appleAdvertisingIdentifier SWIFT_DEPRECATED_MSG("AdBrixRm sdk can get IDFA/IDFV without this api, please don't use this.");
 /// <em>로그인</em> - 본 함수로 <em>라이브옵스 push</em>, <em>커머스</em> 공동 사용가능
 /// <h1>Example Swift</h1>
 /// \code
