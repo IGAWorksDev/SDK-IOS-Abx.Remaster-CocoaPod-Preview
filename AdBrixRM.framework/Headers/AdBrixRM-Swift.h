@@ -408,7 +408,6 @@ SWIFT_CLASS("_TtC8AdBrixRM8AdBrixRM")
 /// \param secretKey input your secret key served from console site.
 ///
 - (void)initAdBrixWithAppKey:(NSString * _Nonnull)appKey secretKey:(NSString * _Nonnull)secretKey SWIFT_METHOD_FAMILY(none);
-- (void)initAdBrixWithDelayTimeWithAppKey:(NSString * _Nonnull)appKey secretKey:(NSString * _Nonnull)secretKey delaySecondTime:(NSInteger)delaySecondTime SWIFT_METHOD_FAMILY(none);
 - (void)initAdBrixPush SWIFT_METHOD_FAMILY(none) SWIFT_AVAILABILITY(ios,introduced=10.0);
 /// 노출 <em>로그 레벨</em>을 설정한다
 /// <h1>Example Swift</h1>
@@ -3879,7 +3878,6 @@ SWIFT_CLASS("_TtC8AdBrixRM8AdBrixRM")
 /// \param secretKey input your secret key served from console site.
 ///
 - (void)initAdBrixWithAppKey:(NSString * _Nonnull)appKey secretKey:(NSString * _Nonnull)secretKey SWIFT_METHOD_FAMILY(none);
-- (void)initAdBrixWithDelayTimeWithAppKey:(NSString * _Nonnull)appKey secretKey:(NSString * _Nonnull)secretKey delaySecondTime:(NSInteger)delaySecondTime SWIFT_METHOD_FAMILY(none);
 - (void)initAdBrixPush SWIFT_METHOD_FAMILY(none) SWIFT_AVAILABILITY(ios,introduced=10.0);
 /// 노출 <em>로그 레벨</em>을 설정한다
 /// <h1>Example Swift</h1>
