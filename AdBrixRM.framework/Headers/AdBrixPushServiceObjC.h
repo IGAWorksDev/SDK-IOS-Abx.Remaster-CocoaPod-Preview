@@ -12,11 +12,16 @@
 #import <UserNotifications/UserNotifications.h>
 
 API_AVAILABLE(ios(10.0))
-@interface AdBrixPushServiceObjC : UNNotificationServiceExtension
+@interface AdBrixPushServiceObjC : NSObject
+- (void)didReceiveAbxPush:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent *contentToDeliver))contentHandler;
 
-- (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent *contentToDeliver))contentHandler;
+- (void)abxPushServiceExtensionTimeWillExpire;
 
-// Will be called just before this extension is terminated by the system. You may choose whether to override this method.
-- (void)serviceExtensionTimeWillExpire;
+//@interface AdBrixPushServiceObjC : UNNotificationServiceExtension
+//
+//- (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent *contentToDeliver))contentHandler;
+//
+//// Will be called just before this extension is terminated by the system. You may choose whether to override this method.
+//- (void)serviceExtensionTimeWillExpire;
 
 @end
