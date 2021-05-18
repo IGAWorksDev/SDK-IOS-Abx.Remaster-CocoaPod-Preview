@@ -220,13 +220,21 @@ typedef SWIFT_ENUM(NSInteger, AbxIAMNoticeType, open) {
   AbxIAMNoticeTypeModal2 = 5,
 };
 
+@class NSString;
+
+SWIFT_CLASS("_TtC8AdBrixRM18AbxRemotePushModel")
+@interface AbxRemotePushModel : NSObject
+- (NSString * _Nonnull)toString SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 SWIFT_CLASS("_TtC8AdBrixRM24AbxSkbroadbandController")
 @interface AbxSkbroadbandController : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSString;
 
 SWIFT_CLASS("_TtC8AdBrixRM15AdBrixBase64Key")
 @interface AdBrixBase64Key : NSObject
@@ -2978,6 +2986,10 @@ SWIFT_CLASS("_TtC8AdBrixRM8AdBrixRM")
 - (void)setNilValueForKey:(NSString * _Nonnull)key SWIFT_DEPRECATED_MSG("Don't use this override function.");
 - (void)didReceiveAbxPush:(UNNotificationRequest * _Nonnull)request withContentHandler:(void (^ _Nonnull)(UNNotificationContent * _Nonnull))contentHandler SWIFT_AVAILABILITY(ios,introduced=10.0);
 - (void)abxPushServiceExtensionTimeWillExpire SWIFT_AVAILABILITY(ios,introduced=10.0);
+- (AbxRemotePushModel * _Nullable)parsePushData:(NSDictionary * _Nonnull)pushDict error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (void)openPush:(AbxRemotePushModel * _Nonnull)abxRemotePushModel SWIFT_AVAILABILITY(ios,introduced=10.0);
+- (void)deleteUserDataAndStopSDK:(NSString * _Nonnull)userId;
+- (void)restartSDK;
 @end
 
 typedef SWIFT_ENUM(NSInteger, AdBrixLogLevel, open) {
@@ -3718,13 +3730,21 @@ typedef SWIFT_ENUM(NSInteger, AbxIAMNoticeType, open) {
   AbxIAMNoticeTypeModal2 = 5,
 };
 
+@class NSString;
+
+SWIFT_CLASS("_TtC8AdBrixRM18AbxRemotePushModel")
+@interface AbxRemotePushModel : NSObject
+- (NSString * _Nonnull)toString SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 SWIFT_CLASS("_TtC8AdBrixRM24AbxSkbroadbandController")
 @interface AbxSkbroadbandController : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSString;
 
 SWIFT_CLASS("_TtC8AdBrixRM15AdBrixBase64Key")
 @interface AdBrixBase64Key : NSObject
@@ -6476,6 +6496,10 @@ SWIFT_CLASS("_TtC8AdBrixRM8AdBrixRM")
 - (void)setNilValueForKey:(NSString * _Nonnull)key SWIFT_DEPRECATED_MSG("Don't use this override function.");
 - (void)didReceiveAbxPush:(UNNotificationRequest * _Nonnull)request withContentHandler:(void (^ _Nonnull)(UNNotificationContent * _Nonnull))contentHandler SWIFT_AVAILABILITY(ios,introduced=10.0);
 - (void)abxPushServiceExtensionTimeWillExpire SWIFT_AVAILABILITY(ios,introduced=10.0);
+- (AbxRemotePushModel * _Nullable)parsePushData:(NSDictionary * _Nonnull)pushDict error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (void)openPush:(AbxRemotePushModel * _Nonnull)abxRemotePushModel SWIFT_AVAILABILITY(ios,introduced=10.0);
+- (void)deleteUserDataAndStopSDK:(NSString * _Nonnull)userId;
+- (void)restartSDK;
 @end
 
 typedef SWIFT_ENUM(NSInteger, AdBrixLogLevel, open) {

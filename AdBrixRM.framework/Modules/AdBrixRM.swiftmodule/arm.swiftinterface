@@ -691,6 +691,11 @@ open class AdBrixMultiPushProviderController : ObjectiveC.NSObject {
   @objc public func didReceiveAbxPush(_ request: UserNotifications.UNNotificationRequest, withContentHandler contentHandler: @escaping (UserNotifications.UNNotificationContent) -> Swift.Void)
   @available(iOS 10.0, *)
   @objc public func abxPushServiceExtensionTimeWillExpire()
+  @objc public func parsePushData(_ pushDict: [Swift.AnyHashable : Any]) throws -> AdBrixRM.AbxRemotePushModel
+  @available(iOS 10.0, *)
+  @objc public func openPush(_ abxRemotePushModel: AdBrixRM.AbxRemotePushModel)
+  @objc public func deleteUserDataAndStopSDK(_ userId: Swift.String)
+  @objc public func restartSDK()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class AbxSkbroadbandController : ObjectiveC.NSObject {
@@ -722,6 +727,18 @@ public enum Component {
 @_hasMissingDesignatedInitializers public class Formatter : AdBrixRM.Formatters {
   convenience public init(_ format: Swift.String, _ components: AdBrixRM.Component...)
   public init(_ format: Swift.String, _ components: [AdBrixRM.Component])
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class AbxRemotePushModel : ObjectiveC.NSObject {
+  public var title: Swift.String
+  public var body: Swift.String
+  public var subtitle: Swift.String
+  public var campaignId: Swift.String
+  public var campaignRevisionNo: Swift.Int
+  public var stepId: Swift.String
+  public var cycleTime: Swift.String
+  @objc public func toString() -> Swift.String
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class AdBrixConfig : ObjectiveC.NSObject {
@@ -821,6 +838,11 @@ open class Logger {
   @objc override dynamic public func setValuesForKeys(_ keyedValues: [Swift.String : Any])
   @available(*, deprecated, message: "Don't use this override function.")
   @objc override dynamic public func setNilValueForKey(_ key: Swift.String)
+  public func getSDKStoppedState() -> Swift.Int
+  public func setIsSDKStopped(_ isSDKStopped: Swift.Bool)
+  public func setIsSDKStoppedServerSync(_ isSDKStoppedServerSync: Swift.Bool)
+  public func deleteUserDataAndStopSDK(_ userId: Swift.String)
+  public func restartSDK()
   @objc deinit
 }
 @objc public enum AbxIAMNoticeType : Swift.Int {
