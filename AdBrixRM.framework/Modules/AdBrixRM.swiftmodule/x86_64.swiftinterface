@@ -691,11 +691,6 @@ open class AdBrixMultiPushProviderController : ObjectiveC.NSObject {
   @objc public func didReceiveAbxPush(_ request: UserNotifications.UNNotificationRequest, withContentHandler contentHandler: @escaping (UserNotifications.UNNotificationContent) -> Swift.Void)
   @available(iOS 10.0, *)
   @objc public func abxPushServiceExtensionTimeWillExpire()
-  @objc public func parsePushData(_ pushDict: [Swift.AnyHashable : Any]) throws -> AdBrixRM.AbxRemotePushModel
-  @available(iOS 10.0, *)
-  @objc public func openPush(_ abxRemotePushModel: AdBrixRM.AbxRemotePushModel)
-  @objc public func deleteUserDataAndStopSDK(_ userId: Swift.String)
-  @objc public func restartSDK()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class AbxSkbroadbandController : ObjectiveC.NSObject {
@@ -727,25 +722,6 @@ public enum Component {
 @_hasMissingDesignatedInitializers public class Formatter : AdBrixRM.Formatters {
   convenience public init(_ format: Swift.String, _ components: AdBrixRM.Component...)
   public init(_ format: Swift.String, _ components: [AdBrixRM.Component])
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers public class AbxRemotePushModel : ObjectiveC.NSObject {
-  final public let title: Swift.String
-  final public let subtitle: Swift.String
-  final public let body: Swift.String
-  final public let imageUrl: Swift.String
-  final public let genVibe: Swift.String
-  final public let genSound: Swift.String
-  final public let deeplinkUrl: Swift.String
-  final public let deeplinkJson: [Swift.String : Any]
-  final public let campaignId: Swift.String
-  final public let campaignRevisionNo: Swift.Int
-  final public let stepId: Swift.String
-  final public let cycleTime: Swift.String
-  final public let notificationId: Swift.Int
-  @objc public init(campaignId: Swift.String, campaignRevisionNo: Swift.Int, stepId: Swift.String, cycleTime: Swift.String) throws
-  @objc public func toString() -> Swift.String
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class AdBrixConfig : ObjectiveC.NSObject {
@@ -845,11 +821,6 @@ open class Logger {
   @objc override dynamic public func setValuesForKeys(_ keyedValues: [Swift.String : Any])
   @available(*, deprecated, message: "Don't use this override function.")
   @objc override dynamic public func setNilValueForKey(_ key: Swift.String)
-  public func getSDKStoppedState() -> Swift.Int
-  public func setIsSDKStopped(_ isSDKStopped: Swift.Bool)
-  public func setIsSDKStoppedServerSync(_ isSDKStoppedServerSync: Swift.Bool)
-  public func deleteUserDataAndStopSDK(_ userId: Swift.String)
-  public func restartSDK()
   @objc deinit
 }
 @objc public enum AbxIAMNoticeType : Swift.Int {
